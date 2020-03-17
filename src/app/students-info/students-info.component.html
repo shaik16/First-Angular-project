@@ -1,0 +1,29 @@
+<div class="main">
+    <div class="row">
+        <div class="col-md-3 col-sm-0"></div>
+        <div class="col-md-6 col-sm-12">
+            <br><br><br><br><br>
+            <h2 class="font1 text-center">Student Info</h2>
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ABC ID</th>
+                        <th>Name</th>
+                        <th>Phone No</th>
+                        <th>Course</th>
+                        <th>Fees</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of data">
+                        <td scope="row">{{item.ABC_ID}}</td>
+                        <td>{{item.name}}</td>
+                        <td>{{item.phone}}</td>
+                        <td>{{item.course}}</td>
+                        <td>{{item.fees}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
